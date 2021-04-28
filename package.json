@@ -1,0 +1,37 @@
+{
+  "name": "udacity-react-nanodegree--practice--react-and-redux",
+  "version": "1.0.0",
+  "description": "Udacity. JavaScript Promises. Practice. 01. Creating Promises.",
+  "private": true,
+  "scripts": {
+    "lint": "eslint && prettier --write .",
+    "lint:prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o2sevruk/udacity-javascript-promises--practice--creating-promises"
+  },
+  "author": "o2sevruk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o2sevruk/udacity-javascript-promises--practice--creating-promises/issues"
+  },
+  "homepage": "https://github.com/o2sevruk/udacity-javascript-promises--practice--creating-promises#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,html,md}": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
